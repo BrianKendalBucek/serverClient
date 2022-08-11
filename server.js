@@ -14,6 +14,7 @@ server.on('connection', (connection) => {
 
   connection.on('data', (data) => {
     console.log(data);
+    connection.write('Message received!');
   });
 
   connection.on('error', (error) => {
