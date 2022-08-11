@@ -18,7 +18,7 @@ server.on('connection', (connection) => {
 
   connection.on('error', (error) => {
     // console.log(error);
-    //Handle unexpected connection loss
+    // Handle unexpected connection loss
     if (error.code == 'ECONNRESET') console.log('A client has ended their sessoin');
     else console.log(error);
   })
